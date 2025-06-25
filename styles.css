@@ -83,7 +83,7 @@ body {
     margin: 0;
 }
 
-#add-book {
+.hidden {
     display: none;
 }
 
