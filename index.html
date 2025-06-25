@@ -25,8 +25,33 @@
                 <button type="button" id="audiobooks">Audiobooks</button>
                 <button type="button" id="podcasts">Podcasts</button>
                 <button type="button" id="wishlist">Wishlist</button>
-                <button type="button" id="add">Add Book +</button>
+                
 
+            </div>
+
+            <!--adding the book form-->
+
+            <div class="form-button">
+                <button type="button" id="add">Add Book +</button>
+                <form id="add-book">
+                    <p>
+                        <label for="title">Book Title: </label>
+                        <input type="text" id="title" name="book_title">
+                    </p>
+                    <p>
+                        <label for="author">Author: </label>
+                        <input type="text" id="author" name="book_author">
+                    </p>
+                    <p>
+                        <label for="number-of-pages">Number of Pages: </label>
+                        <input type="text" id="number-of-pages" name="number-of-pages">
+                    </p>
+                    <p>
+                        <label for="read">Have You Read This Book? </label>
+                        <input type="button" id="read" name="read">
+                    </p>
+
+                </form>
             </div>
         </div>
         <div class="footer" style="grid-area: footer">

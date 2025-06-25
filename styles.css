@@ -83,4 +83,8 @@ body {
     margin: 0;
 }
 
+#add-book {
+    display: none;
+}
+
 
