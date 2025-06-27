@@ -37,9 +37,26 @@ submit.addEventListener("click", (event) => {
     const numberOfPages = parseInt(document.querySelector("#number-of-pages").value);
     const isRead = document.querySelector("#read").checked;
     addBookToLibrary(title, author, numberOfPages, isRead);
+    const form = document.querySelector("#add-book");
+    form.classList.add("hidden");
+
+    displayBook(title, author, numberOfPages, isRead);
 
     
 });
+
+function displayBook(title, author, numberOfPages, isRead) {
+    const bookCard = document.createElement('div');
+    bookCard.innerHTML = `
+        <h3>Title: ${title}</h3>
+        <p>Author: ${author}</p>
+        <p>Pages: ${numberOfPages}</p>
+        <p>Status: ${isRead ? "Read" : "Not Read"}</p>
+    `;
+
+    const container = document.getElementById('content');
+    container.appendChild(bookCard);
+};
 
 
 
